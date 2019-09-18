@@ -9,8 +9,18 @@
 class Goods{
  public:
   Goods(int index, int price) {
-   goods_index = index;
-   goods_price = price;
+   if (index < 0) {
+     goods_index_ = 0;
+     cout << "index can't be minus value" << endl;
+   }
+   else if (price < 0) {
+     goods_price_ = 0;
+     cout << "price can't be minus value" << endl;
+   }
+   else {
+     goods_index = index;
+     goods_price = price;
+   }
   }
   void SetGoodsInfo(int index, int price);
   int GetIndex();
