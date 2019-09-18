@@ -1,6 +1,8 @@
 #include <iostream>
 #include "./shopping.h"
 
+// add goods, make shopping list and sort by price or index of goods
+
 int main(int argc, char* argv[]) {
   Goods goods1;
   Goods goods2;
