@@ -4,13 +4,10 @@
 
 // Set member variable of goods with given index and price values
 void Goods::SetGoodsInfo(int index, int price) {
-  if (index < 0) {
-    goods_index_ = 0;
-    cout << "index can't be minus value" << endl;
-  }
-  else if (price < 0) {
-    goods_price_ = 0;
-    cout << "price can't be minus value" << endl;
+  if (index < 0) || (price < 0)) {
+     goods_index_ = 0;
+     goods_price_ = 0;
+     cout << "index and price can't be minus value" << endl;
   }
   else {
     goods_index_ = index;
